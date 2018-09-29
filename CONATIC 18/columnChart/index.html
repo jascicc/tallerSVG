@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--title-->
+		<title>SVG Column Chart</title>
+		<!--style sheets-->
+		<link href="css/style.css" rel="stylesheet"/>
+		<link href="css/chart.css" rel="stylesheet"/>
+		<!--javascript-->
+		<script src="js/main.js"></script>
+		<script src="js/svg.js"></script>
+		<!--metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="utf-8"/>
+	</head>
+	<body onload="init();">
+		<header>
+			<div id="menuicon"><img src="images/menu.png"/></div>
+			<div id="headertext">Column Chart</div>
+		</header>
+		<div id="content">
+			<div id="values">
+				<table>
+					<thead>
+						<tr>
+							<th width="40%">Month</th><th width="30%">High</th><th width="30%">Low</th>
+						</tr>
+					</thead>
+					<tbody id="tablevalues"></tbody>
+				</table>
+			</div>
+			<div id="chart">
+				<svg id="svgchart"></svg>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

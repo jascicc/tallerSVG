@@ -1,0 +1,62 @@
+.title {
+    font-size: 20pt;
+    font-weight: bold;
+    fill: #555;
+    text-anchor: middle;
+}
+.subtitle {
+    font-size: 16pt;
+    fill: #777;
+    text-anchor: middle;
+}
+.axisline {
+    stroke: #999;
+    stroke-width: 1px;
+}
+.guideline {
+    stroke: #999;
+    stroke-width: 1px;
+    stroke-dasharray: 5 5;
+}
+.yaxisheader, .xaxisheader {
+    font-size: 14pt;
+    fill: #999;
+}
+.yaxisheader {
+    text-anchor: middle;
+    writing-mode: tb;
+}
+.xaxisheader {
+    text-anchor: middle;
+}
+.yaxistext, .xaxistext {
+    font-size: 10pt;
+    fill: #999;
+}
+.yaxistext {
+    text-anchor: end;
+}
+.xaxistext {
+    text-anchor: middle;
+}
+.series1 {
+    fill: #EF5350;
+    stroke: #D32F2F;
+    stroke-width: 1px;
+}
+.series2 {
+    fill: #42A5F5;
+    stroke: #1976D2;
+    stroke-width: 1px;
+}
+.series1header, .series2header {
+    font-size: 10pt;
+    font-weight: bold;
+    text-anchor: middle;
+}
+.series1header {
+    fill: #D32F2F;
+}
+.series2header {
+    fill: #1976D2;
+}

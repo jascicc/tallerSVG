@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--title-->
+		<title>SVG Clickable</title>
+		<!--style sheet-->
+		<link href="css/style.css" rel="stylesheet"></link>
+		<!--javascript-->
+		<script src="js/colors.js"></script>
+		<script src="js/svg.js"></script>
+		<!--metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="utf-8"/>
+	</head>
+	<body onload="init()">
+		<header>
+			<div id="menuicon"><img src="images/menu.png"/></div>
+			<div id="headertext">Clickable Elements</div>
+		</header>
+		<div id="content">
+			<svg id="drawing">
+				<!--canvas-->
+				<rect class="canvas" onClick="clearSelection()" x="0px" y="0px" width="100%" height="100%"/>
+				<!--toolbar-->
+				<rect class="shadow" x="0px" y="0px" width="50" height="100%"/>
+				<!--background-->
+				<path id="jerseybackground" class="defaultclickable" onClick="changeSelection(this.id)"
+					d="M120,260 L284,184 L396,184, L560,260 L524,340 L464,310 L440,550 L240,550 L216,310 L156,340 L120,260
+					M620,260 L784,184 L896,184, L1060,260 L1024,340 L964,310 L940,550 L740,550 L716,310 L656,340 Z"/>
+				<line class="default" x1="216" y1="310" x2="284" y2="184"/>
+				<line class="default" x1="464" y1="310" x2="396" y2="184"/>
+				<line class="default" x1="716" y1="310" x2="784" y2="184"/>
+				<line class="default" x1="964" y1="310" x2="896" y2="184"/>
+				<line class="default" x1="745" y1="256.5" x2="935" y2="256.5"/>
+				<line class="default" x1="745" y1="430" x2="935" y2="430"/>
+				<!--collar background-->
+				<path class="shadow" d="M290,170 L390,170 L396,184 L284,184 Z"/>
+				<path class="darkshadow" d="M284,184 L396,184 L340,230 Z"/>
+				<!--stripes-->
+				<path id="stripes" class="defaultclickable" onclick="changeSelection(this.id)"
+					d="M120,260 L284,184 L264,220 L130,282 L120,260 
+					M245,256.5 L245,550 L240,550 L216,310 L245,256.5
+					M284,184 L321,214 L321,550 L284,550 L284,184
+					M359,214 L396,184 L396,256.5 L359,256.5 L359,214
+					M359,330 L396,330 L396,550 L359,550 L359,330
+					M396,184 L560,260 L550,282 L415,220 L396,184
+					M435,256.5 L464,310 L440,550 L435,550 L435,256.5
+					
+					M620,260 L784,184 L764,220 L630,282 L620,260 
+					M745,256.5 L745,550 L740,550 L716,310 L745,256.5
+					M784,184 L821,184 L821,256.5 L784,256.5 L784,184
+					M859,184 L896,184 L896,256.5 L859,256.5 L859,184
+					M784,430 L821,430 L821,550 L784,550 L784,430
+					M859,430 L896,430 L896,550 L859,550 L859,430
+					M896,184 L1060,260 L1050,282 L915,220 L896,184
+					M935,256.5 L964,310 L940,550 L935,550 L935,256.5 Z"/>
+					<!--collar and sleaves-->
+					<path id="collar" class="defaultclickable" onClick="changeSelection(this.id)"
+						d="M120,260 L130,255 L166,335.5 L156,340 L120,260
+						M390,170 L396,184 L340,230 L390,170
+						M284,184 L290,170 L340,230 L284,184
+						M550,255 L560,260 L524,340 L514,335.5 L550,255 
+						M620,260 L630,255 L666,335.5 L656,340 L620,260
+						M1050,255 L1060,260 L1024,340 L1014,335.5 L1050,255
+						M790,170 L890,170 L896,184 L784,184 Z"/>
+					<!--front number-->
+					<text id="frontnumber" class="defaultclickable" style="font-size:36pt;" onClick="changeSelection(this.id)" x="378" y="310">17</text>
+					<!--name-->
+					<text id="name" class="defaultclickable" style="font-size:20pt;" onClick="changeSelection(this.id)" x="840" y="285">RIVERS</text>
+					<!--name-->
+					<text id="backnumber" class="defaultclickable" style="font-size:96pt;" onClick="changeSelection(this.id)" x="840" y="400">17</text>
+
+			</svg>
+		</div>
+	</body>
+</html>
